@@ -6,5 +6,5 @@
 
 while read line ;do
     echo "adb install -r $line"
-done < list
+done < list.txt
 echo "bactch install complete."
