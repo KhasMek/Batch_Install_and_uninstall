@@ -7,6 +7,6 @@
 while read line ;do
     #trim the .apk
     package=$(echo $line | sed 's/\(.*\)\..*/\1/')
-    echo "adb uninstall $package"
+    adb uninstall $package
 done < list.txt
-echo "bactch unininstall complete."
+echo "batch unininstall complete."
